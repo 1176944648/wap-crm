@@ -3,50 +3,42 @@ import Bidding from "../pages/bidding/auction/biddingStage.vue"
 import Succeed from "../pages/bidding/auction/succeed/succeed.vue"
 import Defeated from "../pages/bidding/auction/defeated/defeated.vue"
 import Abortive from "../pages/bidding/auction/abortive/abortive.vue"
-import Search from "../pages/customerList/search/search.vue"
-import CustomerList from "../pages/customerList"
 import Details from "../pages/customerDetails/CustomerDetails.vue"
 import Information from "../pages/customerDetails/customerInformation/CustomerInformation.vue"
 import Record from "../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue"
 import Sign from "../pages/customerDetails/signMsg/SignMsg.vue"
-import CustomerListAll from "../pages/customerList/statusTab/customerListAll"
-import CustomerListFollow from "../pages/customerList/statusTab/customerListFollow"
-import CustomerListNew from "../pages/customerList/statusTab/customerListNew"
-import CustomerListSign from "../pages/customerList/statusTab/customerListSign"
-import CustomerListMore from "../pages/customerList/statusTab/customerListMore"
-
-const router = [{
+const router = [{//客户列表
     path: "/customerList",
     name: "customerList",
-    component: CustomerList,
+    component: ()=>import("../pages/customerList"),
     redirect : "/customerList/all",
-    children: [{
+    children: [{//客户列表内tab切换子路由
         path: "all",
         name: "customerListAll",
-        component: CustomerListAll,
+        component: ()=>import("../pages/customerList/statusTab/customerListAll"),
         
     },{
         path: "new",
         name: "customerListNew",
-        component: CustomerListNew
+        component: ()=>import("../pages/customerList/statusTab/customerListNew"),
     },{
         path: "sign",
         name: "customerListSign",
-        component: CustomerListSign
+        component: ()=>import("../pages/customerList/statusTab/customerListSign"),
     },{
         path: "follow",
         name: "customerListFollow",
-        component: CustomerListFollow
+        component: ()=>import("../pages/customerList/statusTab/customerListFollow"),
     },{
         path: "more",
         name: "customerListMore",
-        component: CustomerListMore
+        component: ()=>import("../pages/customerList/statusTab/customerListMore"),
     }]
 
-}, {
+}, {//客户列表搜索页
     path: "/search",
     name: "search",
-    component: Search,
+    component: ()=>import("../pages/customerList/search/search.vue"),
 },
 {
     path: "/Information",
