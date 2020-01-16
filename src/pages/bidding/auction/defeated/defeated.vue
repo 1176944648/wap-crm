@@ -1,11 +1,8 @@
 <template>
-  <div id="app">
-
-  </div>
+  <div>失败</div>
 </template>
 
 <script>
-
 export default {
 
 }

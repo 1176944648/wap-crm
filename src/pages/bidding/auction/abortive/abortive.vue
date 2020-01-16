@@ -1,11 +1,8 @@
 <template>
-  <div id="app">
-
-  </div>
+  <div>流拍</div>
 </template>
 
 <script>
-
 export default {
 
 }

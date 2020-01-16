@@ -1,16 +1,13 @@
 <template>
-  <div id="app">
-
-  </div>
+  <div>竞拍阶段</div>
 </template>
 
 <script>
-
 export default {
 
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
 
 </style>
