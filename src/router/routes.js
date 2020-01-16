@@ -5,10 +5,7 @@ import Defeated from "../pages/bidding/auction/defeated/defeated.vue"
 import Abortive from "../pages/bidding/auction/abortive/abortive.vue"
 import Search from "../pages/customerList/search/search.vue"
 import CustomerList from "../pages/customerList"
-import Details from "../pages/customerDetails/CustomerDetails.vue"
-import Information from "../pages/customerDetails/customerInformation/CustomerInformation.vue"
-import Record from "../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue"
-import Sign from "../pages/customerDetails/signMsg/SignMsg.vue"
+
 import CustomerListAll from "../pages/customerList/statusTab/customerListAll"
 import CustomerListFollow from "../pages/customerList/statusTab/customerListFollow"
 import CustomerListNew from "../pages/customerList/statusTab/customerListNew"
@@ -49,15 +46,6 @@ const router = [{
     component: Search,
 },
 {
-    path: "/Information",
-    component: Information
-}, {
-    path: "/Record",
-    component: Record
-}, {
-    path: "/Sign",
-    component: Sign
-}, {
     path: "/orderlist",
     component: Orderlist
 },
@@ -79,17 +67,17 @@ const router = [{
 },
 {
     path: "/Details",
-    component : Details,
+    component : ()=>import("../pages/customerDetails/CustomerDetails.vue"),//进入详情页
     redirect : "/Details/Information",
     children : [{
         path: "Information",
-        component : Information
+        component : ()=>import("../pages/customerDetails/customerInformation/CustomerInformation.vue")//基本信息
     },{
         path: "Record",
-        component : Record
+        component : ()=>import("../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue")//跟单记录
     },{
         path: "Sign",
-        component : Sign
+        component : ()=>import("../pages/customerDetails/signMsg/SignMsg.vue")//签约信息
     }],
 }
 ]
