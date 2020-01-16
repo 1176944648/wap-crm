@@ -1,5 +1,5 @@
 <template>
-  <div>竞拍阶段</div>
+  <div>订单竞拍</div>
 </template>
 
 <script>
