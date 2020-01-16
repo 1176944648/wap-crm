@@ -1,12 +1,8 @@
 <template>
 
   <div id="b">
-  
-    <div>
-       
-      
-      
-      首页</div>
+    <Header :title="title"/>
+    <div>首页</div>
    
     
   </div>
@@ -14,10 +10,16 @@
 
 
 <script>
+import Header from "../../components/header/Header.vue"
 
 export default {
     components:{
-      
+      Header
+    },
+    data(){
+      return{
+        title:"首页"
+      }
     }
 }
 </script>

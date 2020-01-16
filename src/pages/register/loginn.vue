@@ -1,13 +1,20 @@
 <template>
+
   <div id="big">
     <div class="bi">
-    
+ 
      <ul>
-       <li></li>
-       <li></li>
-       <li></li>
+       <li>
+         <input type="text"  placeholder="输入工号"  v-model="userid">
+       </li>
+      <li>
+         <input type="text"  placeholder="输入密码" v-model="password">
+       </li>
+       <li>
+         <input type="text"  placeholder="输入验证码" v-model="seccode">
+       </li>
      </ul>
-     <div class="huo">获取验证码</div>
+     <div class="huo">获取验证码</div> 
      
     <router-link to="/index">登录</router-link>
     </div>
@@ -16,7 +23,16 @@
 
 
 <script>
-export default {};
+export default {
+
+  data(){
+    return{
+      userid:'',
+      password:'',
+      seccode:''
+    }
+  }
+};
 </script>
 
 
@@ -27,30 +43,38 @@ export default {};
   background-image url(../../assets/img/bei.jpg) 
   background-size 100%
   .bi
-    width: 2.3rem;
+    width: 4.6rem;
     text-align: center;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 4rem;
+    color #fff
     ul
-      width 2.3rem
-      height 1.08rem
-      border 1px solid  
-    
+      width 4.6rem
+      height 2.16rem
+      border .02rem solid  
+      background-image url(../../assets/img/gonghao.png) 
+      background-size 100%
       li
-       height 0.36rem
-       border-bottom  1px solid  
+        height 0.72rem
+        border-bottom  .02rem solid #e7e7e7 
+        input 
+          height 0.7rem
+          border none
+          margin-right -1rem
+          color #000
     .huo
-       width 2.3rem
-       height 0.32rem
-       line-height 0.32rem
-       margin-top 0.25rem
+       width 4.6rem
+       height 0.72rem
+       line-height 0.72rem
+       margin-top 0.5rem
        background #108ee9
-       color #fff
+       
       a
        display block
-       width 2.3rem
-       height 0.32rem
-       line-height 0.32rem
-       margin-top 0.25rem
+       width 4.6rem
+       height 0.72rem
+       line-height 0.72rem
+       margin-top 0.5rem
        background #108ee9
+       
 </style>
