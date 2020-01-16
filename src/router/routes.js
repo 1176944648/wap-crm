@@ -1,5 +1,15 @@
 
-const router = [{//客户列表
+const router = [{
+        path: '/index',
+        component:  ()=>import("../pages/main/main.vue")
+    },{
+        path : "/login",
+        component : ()=>import("../pages/register/loginn.vue")//这是写了路由的地址，后在地址对应的组件里面写插件
+    },{
+        path : "/",
+        redirect : "/login"//做了定向得地址配置，可直接跳转，搭配router-view使用
+    }, 
+    {//客户列表
     path: "/customerList",
     name: "customerList",
     component: () => import("../pages/customerList"),
