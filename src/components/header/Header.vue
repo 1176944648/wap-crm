@@ -28,15 +28,17 @@ header
     position fixed
     top 0
     left 0
-    height 0.88rem
+    height .88rem
     width 100%
     display flex
     padding-top .15rem
     .logo
+      padding-left .1rem
       img 
         width 1.7rem
         height .48rem
     .title
-      width 4.45rem
+      width 4.35rem
       text-align center
+      line-height .5rem
 </style>
