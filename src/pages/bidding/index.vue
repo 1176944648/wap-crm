@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header title="订单竞价系统" />
+    <Header title="订单竞价系统" ></Header>
     <router-view></router-view>
   </div>
 </template>
