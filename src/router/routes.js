@@ -1,4 +1,3 @@
-import Abortive from "../pages/bidding/auction/abortive/abortive.vue"
 import Details from "../pages/customerDetails/CustomerDetails.vue"
 import Information from "../pages/customerDetails/customerInformation/CustomerInformation.vue"
 import Record from "../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue"
