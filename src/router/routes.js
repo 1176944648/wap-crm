@@ -1,3 +1,9 @@
-const router = []
+import Login from "../pages/register/loginn.vue"
+import Main from "../pages/main/main.vue"
+//路由不需要注册
 
-export default router
+const routes = [
+
+]
+
+export default routes
