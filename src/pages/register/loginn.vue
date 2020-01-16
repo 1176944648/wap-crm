@@ -43,37 +43,36 @@ export default {
   background-image url(../../assets/img/bei.jpg) 
   background-size 100%
   .bi
-    width: 4.6rem;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 4rem;
+    width: 6.5rem
+    text-align: center
+    margin: 0 auto
+    padding-top: 4.2rem
     color #fff
     ul
-      width 4.6rem
-      height 2.16rem
+      width 6.5rem
+      height 3rem
       border .02rem solid  
       background-image url(../../assets/img/gonghao.png) 
       background-size 100%
       li
-        height 0.72rem
+        height 1rem
         border-bottom  .02rem solid #e7e7e7 
         input 
-          height 0.7rem
+          height 0.9rem
           border none
-          margin-right -1rem
           color #000
     .huo
-       width 4.6rem
-       height 0.72rem
-       line-height 0.72rem
+       width 6.5rem
+       height 0.94rem
+       line-height 0.94rem
        margin-top 0.5rem
        background #108ee9
        
       a
        display block
-       width 4.6rem
-       height 0.72rem
-       line-height 0.72rem
+       width 6.5rem
+       height 0.94rem
+       line-height 0.94rem
        margin-top 0.5rem
        background #108ee9
        
