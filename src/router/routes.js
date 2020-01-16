@@ -6,10 +6,6 @@ import Information from "../pages/customerDetails/customerInformation/CustomerIn
 import Record from "../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue"
 import Sign from "../pages/customerDetails/signMsg/SignMsg.vue"
 import CustomerListAll from "../pages/customerList/statusTab/customerListAll"
-import CustomerListFollow from "../pages/customerList/statusTab/customerListFollow"
-import CustomerListNew from "../pages/customerList/statusTab/customerListNew"
-import CustomerListSign from "../pages/customerList/statusTab/customerListSign"
-import CustomerListMore from "../pages/customerList/statusTab/customerListMore"
 
 const router = [{
     path: "/Information",
@@ -24,28 +20,10 @@ const router = [{
     path: "/customerList",
     name: "customerList",
     component: CustomerList,
-    redirect : "/customerList/all",
     children: [{
         path: "all",
         name: "customerListAll",
-        component: CustomerListAll,
-        
-    },{
-        path: "new",
-        name: "customerListNew",
-        component: CustomerListNew
-    },{
-        path: "sign",
-        name: "customerListSign",
-        component: CustomerListSign
-    },{
-        path: "follow",
-        name: "customerListFollow",
-        component: CustomerListFollow
-    },{
-        path: "more",
-        name: "customerListMore",
-        component: CustomerListMore
+        component: CustomerListAll
     }]
 
 }, {
