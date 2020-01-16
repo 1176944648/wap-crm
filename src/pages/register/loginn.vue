@@ -1,8 +1,7 @@
 <template>
   <div id="big">
     <div class="bi">
-    <div class="logo">马上办公</div>
-    <div class="title">业务管理系统</div>
+    
      <ul>
        <li></li>
        <li></li>
@@ -23,31 +22,20 @@ export default {};
 
 <style lang="stylus" scoped>
 #big 
-  width 100%
   height 100%
-  background url(../../assets/bei.jpg)
+  width 100%
+  background-image url(../../assets/img/bei.jpg) 
+  background-size 100%
   .bi
-    width 2.3rem
-    height 3.3rem
-    border 1px solid  
-    margin 0 auto
-    text-align center
-   
-    .logo
-      width 2.3rem
-      height 0.21rem
-      border 1px solid
-      margin-top 0.1rem
-    .title
-      width 2.3rem
-      height 0.16rem
-      border 1px solid  
-      margin-top 0.25rem
+    width: 2.3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
     ul
       width 2.3rem
       height 1.08rem
       border 1px solid  
-      margin-top 0.34rem
+    
       li
        height 0.36rem
        border-bottom  1px solid  
@@ -55,7 +43,6 @@ export default {};
        width 2.3rem
        height 0.32rem
        line-height 0.32rem
-       border 1px solid 
        margin-top 0.25rem
        background #108ee9
        color #fff
@@ -64,7 +51,6 @@ export default {};
        width 2.3rem
        height 0.32rem
        line-height 0.32rem
-       border 1px solid 
        margin-top 0.25rem
        background #108ee9
 </style>
