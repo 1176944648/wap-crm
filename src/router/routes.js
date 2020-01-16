@@ -41,26 +41,30 @@ const router = [{
     path: "/search",
     name: "search",
     component: () => import("../pages/customerList/search/search.vue"),
-},
-{
-    path: "/orderlist",//竞拍订单列表
-    component: () => import("../pages/bidding/orderList/list.vue")
-},
-{
-    path: "/bidding",//订单竞拍/竞速
-    component: () => import("../pages/bidding/auction/biddingStage.vue"),
-},
-{
-    path: "/bidding/succeed",//竞拍成功
-    component: () => import("../pages/bidding/auction/succeed/succeed.vue"),
-},
-{
-    path: "/bidding/defeated",//竞拍失败
-    component: () => import("../pages/bidding/auction/defeated/defeated.vue"),
-},
-{
-    path: "/bidding/abortive",//流拍
-    component: () => import("../pages/bidding/auction/abortive/abortive.vue"),
+},{
+    path : "/biddingindex",//竞拍首页
+    component : ()=>import("../pages/bidding/index.vue"),
+    children : [{
+        path: "orderlist",//竞拍订单列表
+        component: () => import("../pages/bidding/orderList/list.vue")
+    },
+    {
+        path: "bidding",//订单竞拍/竞速
+        component: () => import("../pages/bidding/auction/biddingStage.vue"),
+    },
+    {
+        path: "bidding/succeed",//竞拍成功
+        component: () => import("../pages/bidding/auction/succeed/succeed.vue"),
+    },
+    {
+        path: "bidding/defeated",//竞拍失败
+        component: () => import("../pages/bidding/auction/defeated/defeated.vue"),
+    },
+    {
+        path: "bidding/abortive",//流拍
+        component: () => import("../pages/bidding/auction/abortive/abortive.vue"),
+    }],
+    redirect: "/biddingindex/orderlist",
 },
 {
     path: "/Details",
