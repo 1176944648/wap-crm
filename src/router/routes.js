@@ -87,16 +87,7 @@ const router = [{
     path: "/bidding/defeated",
     component: Defeated,
 },
-]
-    path: "/Information",
-    component : Information
-},{
-    path: "/Record",
-    component : Record
-},{
-    path: "/Sign",
-    component : Sign
-},{
+{
     path:"/customerList",
     name:"customerList",
     component:CustomerList,

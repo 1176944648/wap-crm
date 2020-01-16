@@ -8,7 +8,6 @@ import createRouter from "./router"
 import "./assets/rem"
 import "./assets/css/main.styl"
 Vue.use(Vant)
-Vue.use(Router)
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 const router = createRouter(Router)
