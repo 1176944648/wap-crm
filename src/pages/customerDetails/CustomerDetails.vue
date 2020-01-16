@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header title="详情"/>
-    <div class="detail">
+      <div class="detail">
       <router-link :to="'/Details/Information/'+user">基本信息</router-link>
       <router-link :to="'/Details/Record/'+user">跟单记录</router-link>
       <router-link :to="'/Details/Sign/'+user">签约信息</router-link>
@@ -30,11 +30,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  .detail
+    .detail
       width 100%
       height 1rem
       display flex
       background #fff
+      position fixed
+      top .88rem
+      left 0
       a
           text-align center
           font-size .30rem

@@ -44,7 +44,7 @@ export default {
         background #f6f6f6
         width 100%
         height 100%
-        padding-top .20rem
+        padding-top 1.18rem
         ul
             margin-top .2rem
             background white

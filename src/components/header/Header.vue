@@ -22,9 +22,10 @@ export default {
 header 
   height 0.88rem
   width 100%
-  background #108ee9
   color #fff
+  position relative
   .wrap
+    background #108ee9
     position fixed
     top 0
     left 0
