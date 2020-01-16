@@ -33,7 +33,7 @@ header
     text-align center
     .logo
       position absolute
-      left .1rem
+      left .2rem
       top .2rem
       img 
         width 1.7rem
@@ -44,5 +44,6 @@ header
       line-height .88rem
     .slotBox
       position absolute
-      right .1rem
+      right .3rem
+      top .2rem
 </style>
