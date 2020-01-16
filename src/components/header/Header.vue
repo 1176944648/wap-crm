@@ -25,6 +25,7 @@ header
   color #fff
   position relative
   .wrap
+    background #108ee9
     position fixed
     top 0
     left 0
