@@ -55,17 +55,19 @@ const router = [{//客户列表
 {
     path: "/Details",
     component : ()=>import("../pages/customerDetails/CustomerDetails.vue"),//进入详情页
-    redirect : "/Details/Information",
     children : [{
-        path: "Information",
+        path: "Information/:user",
         component : ()=>import("../pages/customerDetails/customerInformation/CustomerInformation.vue")//基本信息
     },{
-        path: "Record",
+        path: "Record/:user",
         component : ()=>import("../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue")//跟单记录
     },{
-        path: "Sign",
+        path: "Sign/:user",
         component : ()=>import("../pages/customerDetails/signMsg/SignMsg.vue")//签约信息
     }],
+},{
+    path:"/Details/:user",
+    redirect : "/Details/Information/:user",
 }
 ]
 

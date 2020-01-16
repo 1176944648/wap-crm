@@ -1,6 +1,16 @@
 <template>
-    <div>
-        客户基本信息
+    <div class="information">
+        <div>
+            <ul>
+                <li>12</li>
+            </ul>
+            <ul>
+                <li>23</li>
+            </ul>
+            <ul>
+                <li>45</li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -10,6 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+    
 
 </style>
