@@ -37,12 +37,12 @@ export default {
       background #fff
       a
           text-align center
-          font-size .32rem
+          font-size .30rem
           line-height 1rem
           flex 1
           color black
           height 1rem
       .router-link-exact-active
-          color blue
-          border-bottom .04rem solid blue
+          color #108ee9
+          border-bottom .04rem solid #108ee9
 </style>
