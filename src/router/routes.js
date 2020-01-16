@@ -82,10 +82,6 @@ const router = [{
     component: () => import("../pages/clock/clock/clock.vue"),
 },
 {
-    path: "/clockRecord",//打卡
-    component: () => import("../pages/clock/clock/clockRecord.vue"),
-},
-{
     path: "/clockRecord",//打卡记录
     component: () => import("../pages/clock/clock/clockRecord.vue"),
 },
