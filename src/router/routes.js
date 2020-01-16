@@ -1,10 +1,4 @@
-import Orderlist from "../pages/bidding/orderList/list.vue"
-import Bidding from "../pages/bidding/auction/biddingStage.vue"
-import Succeed from "../pages/bidding/auction/succeed/succeed.vue"
-import Defeated from "../pages/bidding/auction/defeated/defeated.vue"
-import Abortive from "../pages/bidding/auction/abortive/abortive.vue"
-import Search from "../pages/customerList/search/search.vue"
-import CustomerList from "../pages/customerList"
+import Details from "../pages/customerDetails/CustomerDetails.vue"
 import Information from "../pages/customerDetails/customerInformation/CustomerInformation.vue"
 import Record from "../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue"
 import Sign from "../pages/customerDetails/signMsg/SignMsg.vue"
@@ -90,10 +84,6 @@ const router = [{
     path: "/bidding/defeated",
     component: Defeated,
 },
-{
-    path: "/bidding/abortive",
-    component: Abortive,
-}
 ]
 
 export default router
