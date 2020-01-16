@@ -41,41 +41,30 @@ const router = [{
     path: "/search",
     name: "search",
     component: () => import("../pages/customerList/search/search.vue"),
-},
-{
-    path: "/orderlist",//竞拍订单列表
-    component: () => import("../pages/bidding/orderList/list.vue")
-},
-{
-    path: "/bidding",//订单竞拍/竞速
-    component: () => import("../pages/bidding/auction/biddingStage.vue"),
-},
-{
-    path: "/bidding/succeed",//竞拍成功
-    component: () => import("../pages/bidding/auction/succeed/succeed.vue"),
-},
-{
-    path: "/bidding/defeated",//竞拍失败
-    component: () => import("../pages/bidding/auction/defeated/defeated.vue"),
-},
-{
-    path: "/bidding/abortive",//流拍
-    component: () => import("../pages/bidding/auction/abortive/abortive.vue"),
-},
-{
-    path: "/Details",
-    component: () => import("../pages/customerDetails/CustomerDetails.vue"),//进入详情页
-    redirect: "/Details/Information",
-    children: [{
-        path: "Information",
-        component: () => import("../pages/customerDetails/customerInformation/CustomerInformation.vue")//基本信息
-    }, {
-        path: "Record",
-        component: () => import("../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue")//跟单记录
-    }, {
-        path: "Sign",
-        component: () => import("../pages/customerDetails/signMsg/SignMsg.vue")//签约信息
+},{
+    path : "/bidding",//竞拍首页
+    component : ()=>import("../pages/bidding/index.vue"),
+    children : [{
+        path: "orderlist",//竞拍订单列表
+        component: () => import("../pages/bidding/orderList/list.vue")
+    },
+    {
+        path: "orderlist/:id",//订单竞拍/竞速
+        component: () => import("../pages/bidding/auction/biddingStage.vue"),
+    },
+    {
+        path: "succeed",//竞拍成功
+        component: () => import("../pages/bidding/auction/succeed/succeed.vue"),
+    },
+    {
+        path: "defeated",//竞拍失败
+        component: () => import("../pages/bidding/auction/defeated/defeated.vue"),
+    },
+    {
+        path: "abortive",//流拍
+        component: () => import("../pages/bidding/auction/abortive/abortive.vue"),
     }],
+    redirect: "/bidding/orderlist",
 },
 {
     path: "/clock",//打卡
@@ -86,8 +75,21 @@ const router = [{
     component: () => import("../pages/clock/clock/clockRecord.vue"),
 },
 {
-    path: "/fieldclock",//外勤打卡
-    component: () => import("../pages/clock/fieldclock/fieldclock.vue"),
+    path: "/Details",
+    component : ()=>import("../pages/customerDetails/CustomerDetails.vue"),//进入详情页
+    children : [{
+        path: "Information/:user",
+        component : ()=>import("../pages/customerDetails/customerInformation/CustomerInformation.vue")//基本信息
+    },{
+        path: "Record/:user",
+        component : ()=>import("../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue")//跟单记录
+    },{
+        path: "Sign/:user",
+        component : ()=>import("../pages/customerDetails/signMsg/SignMsg.vue")//签约信息
+    }],
+},{
+    path:"/Details/:user",
+    redirect : "/Details/Information/:user",
 }
 ]
 
