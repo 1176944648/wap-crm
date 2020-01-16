@@ -4,6 +4,7 @@ import CustomerList from "../pages/customerList"
 import Information from "../pages/customerDetails/customerInformation/CustomerInformation.vue"
 import Record from "../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue"
 import Sign from "../pages/customerDetails/signMsg/SignMsg.vue"
+import CustomerListAll from "../pages/customerList/statusTab/customerListAll"
 
 const router = [{
     path: "/Information",
@@ -18,6 +19,11 @@ const router = [{
     path:"/customerList",
     name:"customerList",
     component:CustomerList,
+    children:[{
+        path:"all",
+        name:"customerListAll",
+        component:CustomerListAll
+    }]
 
 },{
     path:"/search",
