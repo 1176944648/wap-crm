@@ -31,16 +31,17 @@ header
     height .88rem
     width 100%
     text-align center
-    padding-top .15rem
     .logo
       position absolute
       left .1rem
+      top .2rem
       img 
         width 1.7rem
         height .48rem
     .title
+      height .88rem
       text-align center
-      line-height .5rem
+      line-height .88rem
     .slotBox
       position absolute
       right .1rem
