@@ -30,15 +30,18 @@ header
     left 0
     height .88rem
     width 100%
-    display flex
+    text-align center
     padding-top .15rem
     .logo
-      padding-left .1rem
+      position absolute
+      left .1rem
       img 
         width 1.7rem
         height .48rem
     .title
-      width 4.35rem
       text-align center
       line-height .5rem
+    .slotBox
+      position absolute
+      right .1rem
 </style>
