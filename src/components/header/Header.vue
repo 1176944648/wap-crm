@@ -22,17 +22,18 @@ export default {
 header 
   height 0.88rem
   width 100%
-  background #108ee9
   color #fff
+  position relative
   .wrap
     position fixed
     top 0
     left 0
     height .88rem
     width 100%
+    background #108ee9
     text-align center
     .logo
-      position fixed
+      position absolute
       left .2rem
       top .2rem
       img 
@@ -43,7 +44,7 @@ header
       text-align center
       line-height .88rem
     .slotBox
-      position fixed
+      position absolute
       right .3rem
       top .2rem
 </style>
