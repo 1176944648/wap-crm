@@ -1,13 +1,10 @@
 <template>
-  <div id="app">
-
-    hello
-    <router-view></router-view>
+  <div>
+      签约信息
   </div>
 </template>
 
 <script>
-
 export default {
 
 }
