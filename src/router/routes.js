@@ -49,7 +49,7 @@ const router = [{
         component: () => import("../pages/bidding/orderList/list.vue")
     },
     {
-        path: "orderlist/id",//订单竞拍/竞速
+        path: "orderlist/:id",//订单竞拍/竞速
         component: () => import("../pages/bidding/auction/biddingStage.vue"),
     },
     {
