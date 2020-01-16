@@ -5,7 +5,7 @@ import Defeated from "../pages/bidding/auction/defeated/defeated.vue"
 import Abortive from "../pages/bidding/auction/abortive/abortive.vue"
 import Search from "../pages/customerList/search/search.vue"
 import CustomerList from "../pages/customerList"
-// import Details from "../pages/customerDetails/CustomerDetails.vue"
+import Details from "../pages/customerDetails/CustomerDetails.vue"
 import Information from "../pages/customerDetails/customerInformation/CustomerInformation.vue"
 import Record from "../pages/customerDetails/documentaryRecord/DocumentaryRecord.vue"
 import Sign from "../pages/customerDetails/signMsg/SignMsg.vue"
@@ -76,6 +76,21 @@ const router = [{
 {
     path: "/bidding/abortive",
     component: Abortive,
+},
+{
+    path: "/Details",
+    component : Details,
+    redirect : "/Details/Information",
+    children : [{
+        path: "Information",
+        component : Information
+    },{
+        path: "Record",
+        component : Record
+    },{
+        path: "Sign",
+        component : Sign
+    }],
 }
 ]
 
