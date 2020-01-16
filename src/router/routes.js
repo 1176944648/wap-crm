@@ -18,6 +18,7 @@ const router = [{
     }],
     path : "/Details",
     redirect : "/Details/Information"
-}]
+},
+]
 
 export default router

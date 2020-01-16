@@ -1,13 +1,10 @@
 <template>
-  <div id="app">
-
-    <router-view></router-view>
-  </div>
+  <div>失败</div>
 </template>
 
 <script>
-
 export default {
+
 }
 </script>
 
