@@ -1,16 +1,22 @@
 <template>
-  <div id="app"> 
-   <router-view />
+
+  <div id="b">
+  
+    <div>
+       
+      
+      
+      首页</div>
    
+    
   </div>
 </template>
 
 
 <script>
- 
- 
+
 export default {
-    components:{   
+    components:{
       
     }
 }
@@ -18,7 +24,7 @@ export default {
 
 
 <style lang="stylus" scoped>
-#app
-  width 100%
-  height 100%
+   
+    
+     
 </style>

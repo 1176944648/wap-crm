@@ -1,56 +1,78 @@
 
-const router = [{//客户列表
+const router = [{
+    path: '/index',
+    component: () => import("../pages/main/main.vue")
+}, {
+    path: "/login",
+    component: () => import("../pages/register/loginn.vue")//这是写了路由的地址，后在地址对应的组件里面写插件
+}, {
+    path: "/",
+    redirect: "/login"//做了定向得地址配置，可直接跳转，搭配router-view使用
+},
+{//客户列表
     path: "/customerList",
     name: "customerList",
-    component: ()=>import("../pages/customerList"),
-    redirect : "/customerList/all",
+    component: () => import("../pages/customerList"),
+    redirect: "/customerList/all",
     children: [{//客户列表内tab切换子路由
         path: "all",
         name: "customerListAll",
-        component: ()=>import("../pages/customerList/statusTab/customerListAll"),
-        
-    },{
+        component: () => import("../pages/customerList/statusTab/customerListAll"),
+
+    }, {
         path: "new",
         name: "customerListNew",
-        component: ()=>import("../pages/customerList/statusTab/customerListNew"),
-    },{
+        component: () => import("../pages/customerList/statusTab/customerListNew"),
+    }, {
         path: "sign",
         name: "customerListSign",
-        component: ()=>import("../pages/customerList/statusTab/customerListSign"),
-    },{
+        component: () => import("../pages/customerList/statusTab/customerListSign"),
+    }, {
         path: "follow",
         name: "customerListFollow",
-        component: ()=>import("../pages/customerList/statusTab/customerListFollow"),
-    },{
+        component: () => import("../pages/customerList/statusTab/customerListFollow"),
+    }, {
         path: "more",
         name: "customerListMore",
-        component: ()=>import("../pages/customerList/statusTab/customerListMore"),
+        component: () => import("../pages/customerList/statusTab/customerListMore"),
     }]
 
 }, {//客户列表搜索页
     path: "/search",
     name: "search",
-    component: ()=>import("../pages/customerList/search/search.vue"),
+    component: () => import("../pages/customerList/search/search.vue"),
+},{
+    path : "/bidding",//竞拍首页
+    component : ()=>import("../pages/bidding/index.vue"),
+    children : [{
+        path: "orderlist",//竞拍订单列表
+        component: () => import("../pages/bidding/orderList/list.vue")
+    },
+    {
+        path: "orderlist/:id",//订单竞拍/竞速
+        component: () => import("../pages/bidding/auction/biddingStage.vue"),
+    },
+    {
+        path: "succeed",//竞拍成功
+        component: () => import("../pages/bidding/auction/succeed/succeed.vue"),
+    },
+    {
+        path: "defeated",//竞拍失败
+        component: () => import("../pages/bidding/auction/defeated/defeated.vue"),
+    },
+    {
+        path: "abortive",//流拍
+        component: () => import("../pages/bidding/auction/abortive/abortive.vue"),
+    }],
+    redirect: "/bidding/orderlist",
 },
 {
-    path: "/orderlist",//竞拍订单列表
-    component: ()=>import("../pages/bidding/orderList/list.vue")
+    path: "/clock",//打卡
+    component: () => import("../pages/clock/clock/clock.vue"),
 },
 {
-    path: "/bidding",//订单竞拍/竞速
-    component: ()=>import("../pages/bidding/auction/biddingStage.vue"),
-},
-{
-    path: "/bidding/succeed",//竞拍成功
-    component: ()=>import( "../pages/bidding/auction/succeed/succeed.vue"),
-},
-{
-    path: "/bidding/defeated",//竞拍失败
-    component: ()=>import("../pages/bidding/auction/defeated/defeated.vue"),
-},
-{
-    path: "/bidding/abortive",//流拍
-    component: ()=>import("../pages/bidding/auction/abortive/abortive.vue"),
+    path: "/clockRecord",//打卡记录
+    component: () => import("../pages/clock/clock/clockRecord.vue"),
 },
 {
     path: "/Details",
