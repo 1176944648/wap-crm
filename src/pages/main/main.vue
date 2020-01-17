@@ -18,7 +18,7 @@
         <!-- 打卡（地图找房） -->
       </li>
       <li class="deal">
-        <router-link to="orderlist/:id"></router-link>
+        <router-link to="/bidding"></router-link>
         <!-- 订单竞拍 -->
       </li>
     </ul>

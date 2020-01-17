@@ -10,8 +10,12 @@ import Header from "../../components/header/Header.vue";
 export default {
   components: {
     Header
-  }
+  },
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+  div
+    height 100%
+    width 100%
+</style>
