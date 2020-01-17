@@ -65,8 +65,10 @@ const router = [{
         component: () => import("../pages/bidding/auction/abortive/abortive.vue"),
     }],
     redirect: "/bidding/orderlist",
-},
-{
+},{
+   path:"/information",//信息录入
+   component:()=>import("../pages/information/information.vue"),
+},{
     path: "/clock",//打卡
     component: () => import("../pages/clock/clock/clock.vue"),
 },
