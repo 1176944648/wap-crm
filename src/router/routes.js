@@ -90,6 +90,9 @@ const router = [{
 },{
     path:"/Details/:user",
     redirect : "/Details/Information/:user",
+},{
+    path: "/EditText/:msg",
+    component : ()=>import("../components/editText/EditText.vue")
 }
 ]
 
