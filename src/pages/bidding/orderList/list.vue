@@ -9,7 +9,7 @@
             <p class="name">
               {{item.name}}
             </p>
-            <span class="budget"> 预算：{{item.budget}}</span>
+            <span class="budget"> 租赁预算：{{item.budget}}</span>
             <van-button type="info" size="small">加入竞拍</van-button>
           </div>
         </li>
@@ -72,4 +72,6 @@ export default {
           position absolute
           right .3rem
           top .4rem
+          .van-button__text
+            color #fff
 </style>
