@@ -48,4 +48,5 @@ header
       position absolute
       right .3rem
       top .2rem
+      #fff
 </style>
