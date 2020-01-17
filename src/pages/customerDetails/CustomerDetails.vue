@@ -2,10 +2,10 @@
   <div>
     <Header title="详情"/>
       <div class="detail">
-      <router-link :to="'/Details/Information/'+user">基本信息</router-link>
-      <router-link :to="'/Details/Record/'+user">跟单记录</router-link>
-      <router-link :to="'/Details/Sign/'+user">签约信息</router-link>
-    </div>
+        <router-link :to="'/Details/Information/'+user">基本信息</router-link>
+        <router-link :to="'/Details/Record/'+user">跟单记录</router-link>
+        <router-link :to="'/Details/Sign/'+user">签约信息</router-link>
+      </div>
     <router-view></router-view>
   </div>
 </template>

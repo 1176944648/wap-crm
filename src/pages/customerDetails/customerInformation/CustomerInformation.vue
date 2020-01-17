@@ -3,7 +3,7 @@
         <div>
             <ul class="first_ul">
                 <li>
-                    <p>录入人员(不可更改)<span class="first_span">啊</span></p>
+                    <p>录入人员(不可更改)<span class="first_span">{{}}</span></p>
                     <p>更新时间<span>啊</span></p>
                     <p>垂问来源<span>啊</span></p>
                     <p>跟进状态<span>啊</span></p>
@@ -20,13 +20,23 @@
                     <p>预约房源点<span>人</span></p>
                     <p>办公人数/面积<span>人</span></p>
                     <p>客户行业<span>人</span></p>
-                    <p>租贷需求<span>人</span></p>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <p>s是3s是<span>人</span></p>
-                    <p>s是啊s是<span>发</span></p>
+                    <p>联系人<span>人</span></p>
+                    <p>联系人电话<span>发</span></p>
+                    <p>邮箱地址<span>发</span></p>
+                    <p>性别<span>发</span></p>
+                    <p>公司名称<span>发</span></p>
+                    <p>公司职位<span>发</span></p>
+                    <p>兴趣爱好<span>发</span></p>
+                    <router-link :to="'/EditText/'+msg.back+'&'+msg.headtit+'&'+msg.text">
+                        <p>家庭信息
+                            <span class="last_span"></span>
+                            <span>&gt;</span>
+                        </p>
+                    </router-link>
                 </li>
             </ul>
         </div>
@@ -34,8 +44,20 @@
 </template>
 
 <script>
-export default {
 
+export default {
+    data(){
+        return {
+            msg:{
+                back:'information',
+                headtit:'添加备注',
+                text:''
+            }
+        }
+    },
+    components:{
+        
+    },
 }
 </script>
 
@@ -55,6 +77,7 @@ export default {
         li
             padding-left .3rem
             p
+                color black
                 height 1rem
                 border-bottom .02rem solid #ebebeb
                 line-height 1rem
@@ -67,5 +90,19 @@ export default {
                     color black
             p:last-child
                 border 0
-                     
+            .van-cell
+                padding-left .3rem
+                height 1rem
+                padding 0 
+                line-height 1rem
+                color black
+                font-size .34rem
+            .van-icon
+                line-height 1rem
+                margin-right .3rem
+            textarea
+                width 1rem
+                float right
+                height .98rem
+                border 0
 </style>

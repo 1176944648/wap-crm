@@ -7,7 +7,9 @@ import 'vant/lib/index.css'
 import createRouter from "./router"
 import "./assets/rem"
 import "./assets/css/main.styl"
+import { Tag } from 'vant';
 Vue.use(Vant)
+Vue.use(Tag);
 Vue.use(Router)
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
