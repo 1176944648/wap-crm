@@ -1,11 +1,12 @@
 <template>
   <div id="main">
-    <Header :title="title" />
+    <Header :title="title">
     <div class="city">
       <van-dropdown-menu>
         <van-dropdown-item v-model="value1" :options="option1" />
       </van-dropdown-menu>
     </div>
+    </Header>
     <div class="picture"></div>
     <div class="welcome">欢迎回来</div>
     <ul>
@@ -62,15 +63,16 @@ export default {
   height: 100%
   position: relative
 .city
-  color #fff
   position: absolute
-  right: 0.3rem
-  top: 0
+  right: 0rem
+  top: -0.2rem
   .van-dropdown-menu
    height 0.9rem
-   background none 
-  .van-ellipsis
-    color #fff
+   background none    
+   span.van-dropdown-menu__title 
+    color #ffffff !important
+
+
  
 .picture
   width: 100%
