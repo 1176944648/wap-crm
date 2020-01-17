@@ -5,10 +5,22 @@
     <div class="picture"></div>
     <div class="welcome">欢迎回来 </div>
     <ul>
-      <li class="list"></li>
-      <li class="message"></li>
-      <li class="map"></li>
-      <li class="deal"></li>
+      <li class="list"> 
+        <router-link to="/customerList"></router-link>
+        <!-- 跳转客户列表 -->
+      </li>
+      <li class="message">
+        <router-link to="/information"></router-link>
+<!-- 信息录入暂时没有写 -->
+      </li>
+      <li class="map">
+        <router-link to="/clock"></router-link>
+        <!-- 打卡（地图找房） -->
+      </li>
+      <li class="deal">
+        <router-link to="orderlist/:id"></router-link>
+        <!-- 订单竞拍 -->
+      </li>
     </ul>
      
   </div>
@@ -62,7 +74,7 @@ export default {
         background-size: 100% 
        .message
         width 1.69rem
-        height  1.5rem
+        height  1.47rem
         background url(../../assets/img/message.jpg)  
         background-size: 100% 
        .map
@@ -76,6 +88,13 @@ export default {
         background url(../../assets/img/deal.jpg)  
         background-size: 100% 
         margin-left 0.3rem
+
+      a
+      width 1.69rem
+      display block
+      height  1.47rem
+       
+        
     
      
 </style>
