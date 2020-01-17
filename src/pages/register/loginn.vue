@@ -57,7 +57,7 @@ export default {
     ul
       width 6.5rem
       height 3rem
-      border .02rem solid  
+      border-radius .1rem
       background-image url(../../assets/img/gonghao.png)  
       background-size 100%
       li
@@ -73,7 +73,7 @@ export default {
        line-height 0.94rem
        margin-top 0.5rem
        background #108ee9
-       
+       color #fff
       a
        display block
        width 6.5rem
