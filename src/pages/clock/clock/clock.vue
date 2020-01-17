@@ -1,9 +1,16 @@
 <template>
-  <div>正常打卡</div>
+  <div>
+    <Header title="打卡" />
+  </div>
 </template>
 
 <script>
-export default {};
+import Header from "../../../components/header/Header.vue";
+export default {
+  components: {
+    Header
+  }
+};
 </script>
 
 <style>
