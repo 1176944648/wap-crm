@@ -48,4 +48,7 @@ header
       position absolute
       right .3rem
       top .2rem
+      a
+        font-size .26rem
+        color #fff
 </style>
