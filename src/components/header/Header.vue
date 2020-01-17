@@ -32,6 +32,7 @@ header
     width 100%
     background #108ee9
     text-align center
+    z-index 99
     .logo
       position absolute
       left .2rem
