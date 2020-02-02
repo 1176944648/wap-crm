@@ -16,6 +16,7 @@
         <van-icon name="replay" />
       </div>
     </div>
+    <div class="clock"></div>
   </div>
 </template>
 
