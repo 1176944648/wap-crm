@@ -37,7 +37,11 @@ const router = [{
         component: () => import("../pages/customerList/statusTab/customerListMore"),
     }]
 
-}, {//客户列表搜索页
+},{
+    path: "/selectTags",
+    name:"selectTags",
+    component:()=>import("../pages/selectTags/selectTags.vue"),
+},{//客户列表搜索页
     path: "/search",
     name: "search",
     component: () => import("../pages/customerList/search/search.vue"),
