@@ -5,7 +5,7 @@
         <router-link to="/search">
           <img src="../../assets/img/search.png" alt />
         </router-link>
-        <router-link to="/search">标签></router-link>
+        <router-link to="/selectTags">标签></router-link>
       </div>
     </Header>
 
